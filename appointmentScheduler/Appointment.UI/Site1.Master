@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Appointment.UI.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+     header
+        {
+            border: 1px solid gray;
+            width:auto;
+            height:auto;
+            margin:10px;
+            padding:10px;
+            background-color:midnightblue;
+	    text-align:center;
+        }
+       header h1
+        {
+            color:white;
+        }
+      footer h3
+      {
+          color:white;
+      }
+        nav{
+            border: 1px solid gray;
+            width:auto;
+            height:40px;
+            margin:10px;
+            padding:10px;
+	        background-color:lightseagreen;
+        }
+        img{
+            width:60px;
+            height:40px;
+            margin:10px;
+            padding:10px;
+	        background-color:white;
+        }
+    nav ul li{
+        display:inline;
+        margin:20px;
+	padding:10px;
+ 
+    }
+    nav,li{
+        padding:0px;
+ padding-top:20px;
+    }
+    a
+    {
+        color:maroon;
+	text-decoration:none;
+	color:white;
+    }
+    #section1
+    {
+       
+            width:auto;
+            height:500px;
+            margin:10px;
+            padding:10px;
+  background-color:white;
+    }
+ .center{
+     display:block;
+     margin-left:auto;
+     margin-right:auto;
+     width:275px;
+     height:250px;
+ }
+    footer
+    {
+        border: 1px solid gray;
+            width:auto;
+            height:40px;
+            margin:10px;
+            padding:10px;
+            background-color:midnightblue;
+            text-align:center;
+    }
+        .auto-style1 {
+            width: 462px;
+            height: 336px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <header>
+        <h1>Appointment Scheduler</h1>
+    </header>
+  <nav>
+        <ul>
+            <li><a href="Home.apsx">Home</a></li>
+             <li><a href="aboutPage">About</a></li>
+             <li><a href="ContactDetails">Contact</a></li>
+            <li><a href="Register.aspx">Register</a></li>
+            <li><a href="LoginPage.aspx">Login</a></li>    
+        </ul>
+    </nav>  
+   <img class="center" src="images/appointmentScheduler.jpg" />
+    <section id="section1">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+         </section>
+        <footer>
+            <h3>All Rights Reserved.&copy; 2022-23</h3>
+         </footer>  
+    </form>
+</body>
+</html>

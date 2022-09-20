@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Appointment.UI.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+     header
+        {
+            border: 1px solid gray;
+            width:auto;
+            height:auto;
+            margin:10px;
+            padding:10px;
+            background-color:darkblue;
+	    text-align:center;
+        }
+       header h1
+        {
+            color:white;
+        }
+        nav{
+            border: 1px solid gray;
+            width:auto;
+            height:40px;
+            margin:10px;
+            padding:10px;
+	  
+ 	 background-color:lightseagreen;
+        }
+    nav ul li{
+        display:inline;
+        margin:20px;
+	padding:0px;
+ 
+    }
+    nav,li{
+        padding:0px;
+ padding-top:20px;
+    }
+    a
+    {
+        color:maroon;
+	text-decoration:none;
+	color:white;
+    }
+    #section1
+    {
+        border: 1px solid gray;
+            width:auto;
+            height:700px;
+            margin:10px;
+            padding:10px;
+  background-color:white;
+    }
+ #section2
+    {
+        border: 1px solid gray;
+            width:auto;
+            height:150px;
+            margin:10px;
+            padding:10px;
+  background-color:white;
+    }
+    footer
+    {
+        border: 1px solid gray;
+            width:auto;
+            height:40px;
+            margin:10px;
+            padding:10px;
+            background-color:darkblue;
+            text-align:center;
+    }
+    h4{
+        color:white;
+    }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <header>
+        <h1>Appointment Scheduler</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.aspx">Home</a></li>
+            <li><a href="AboutPage.aspx">About</a></li>
+            <li><a href="Register.aspx">Register</a></li>
+            <li><a href="LoginPage.aspx">Login</a></li>
+            <li><a href="ContactDetails.aspx">Contact</a></li>
+            <li><a href="MenuPage.aspx">Menu</a></li>
+            <li><a href="Default.aspx">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section id="section1">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </section>
+    <footer>
+        <h4>All Rights Reserved.&copy; 2022-23</h4>
+    </footer>
+        
+    </form>
+</body>
+</html>
+
+    
