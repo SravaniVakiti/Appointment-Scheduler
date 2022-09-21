@@ -105,12 +105,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="AboutPage.aspx" />
     <Content Include="AddAppointments.aspx" />
     <Content Include="AllAppointments.aspx" />
     <Content Include="AllUsers.aspx" />
-    <Content Include="Contact.aspx" />
     <Content Include="ContactDetails.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -177,13 +175,6 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AboutPage.aspx.cs">
       <DependentUpon>AboutPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,13 +205,6 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ContactDetails.aspx.cs">
       <DependentUpon>ContactDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -94,9 +94,9 @@
     </header>
   <nav>
         <ul>
-            <li><a href="Home.apsx">Home</a></li>
-             <li><a href="aboutPage">About</a></li>
-             <li><a href="ContactDetails">Contact</a></li>
+            <li><a href="Home.aspx">Home</a></li>
+             <li><a href="aboutPage.aspx">About</a></li>
+             <li><a href="ContactDetails.aspx">Contact</a></li>
             <li><a href="Register.aspx">Register</a></li>
             <li><a href="LoginPage.aspx">Login</a></li>    
         </ul>
