@@ -44,7 +44,7 @@
     <Compile Include="AppointmentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserRegistrationService.cs" />
-    <Compile Include="UsersService.cs" />
+    <Compile Include="UserDetailsService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Appointment.Entities\Appointment.Entities.csproj">

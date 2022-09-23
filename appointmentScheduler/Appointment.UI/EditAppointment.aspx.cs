@@ -21,7 +21,7 @@ namespace Appointment.UI
             try
             {
                 Appointments Appointment = new Appointments();
-                Appointment.EmployeeId = int.Parse(txtId.Text);
+                Appointment.EmployeeId = int.Parse(txtEmployeeId.Text);
                 Appointment.Date = txtDate.Text;
                 Appointment.Time = txtTime.Text;
                 //Appointment.Date = DateTime.Parse(txtDate.Text);
@@ -29,11 +29,12 @@ namespace Appointment.UI
                 Appointment.Duration = txtDuration.Text;
                 AppointmentService appointmentService = new AppointmentService();
                 appointmentService.EditAppointment(Appointment);
-                LblMsg.Text = "Record Added";
+                LblMsg.Text = "Record Added successfully";
+                Response.Redirect("MenuPage.aspx");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                LblMsg.Text="error: "+ex;
             }
         }
     }

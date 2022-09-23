@@ -1,9 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="AllAppointments.aspx.cs" Inherits="Appointment.UI.AllAppointments" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" Codefile="CancelAppointment.aspx.cs" Inherits="Appointment.UI.CancelAppointment" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table align="center" style="width: 44%;">
-        <tr>
-            <td>
-    <asp:GridView ID="GVAllAppointments" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ODSAllAppointments" DataKeyNames="EmployeeId">
+    <asp:GridView ID="GVCancelAppointment" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ODSCancelAppointment" DataKeyNames="EmployeeId">
         <Columns>
             <asp:CommandField ShowDeleteButton="True" />
             <asp:BoundField DataField="EmployeeId" HeaderText="EmployeeId" SortExpression="EmployeeId" />
@@ -23,13 +20,9 @@
         <SortedDescendingCellStyle BackColor="#D6DFDF" />
         <SortedDescendingHeaderStyle BackColor="#002876" />
     </asp:GridView>
-    <asp:ObjectDataSource ID="ODSAllAppointments" runat="server" DeleteMethod="DeleteAppointment" SelectMethod="GetAllAppointments" TypeName="Appointment.BusinessLayer.AppointmentService">
+    <asp:ObjectDataSource ID="ODSCancelAppointment" runat="server" DeleteMethod="DeleteAppointment" SelectMethod="GetAllAppointments" TypeName="Appointment.BusinessLayer.AppointmentService">
         <DeleteParameters>
             <asp:Parameter Name="EmployeeId" Type="Int32" />
         </DeleteParameters>
     </asp:ObjectDataSource>
-                </td>
-            </tr>
-        </table>
-    
 </asp:Content>

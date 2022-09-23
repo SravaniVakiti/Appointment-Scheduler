@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="AllUsers.aspx.cs" Inherits="Appointment.UI.AllUsers" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ObjectDataSource1">
+    <asp:GridView ID="GVAllUsers" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ODSAllUsers">
         <Columns>
             <asp:BoundField DataField="Fname" HeaderText="Fname" SortExpression="Fname" />
             <asp:BoundField DataField="Designation" HeaderText="Designation" SortExpression="Designation" />
@@ -18,5 +18,5 @@
         <SortedDescendingCellStyle BackColor="#D6DFDF" />
         <SortedDescendingHeaderStyle BackColor="#002876" />
     </asp:GridView>
-    <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetAllUsers" TypeName="Appointment.BusinessLayer.UsersService"></asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="ODSAllUsers" runat="server" SelectMethod="GetAllUsers" TypeName="Appointment.BusinessLayer.UserDetailsService"></asp:ObjectDataSource>
 </asp:Content>

@@ -8,9 +8,10 @@
         <tr>
             <td><h3>Employee Id:</h3></td>
             <td>
-                <asp:TextBox ID="txtId" runat="server" style="margin-bottom: 0px" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="txtEmployeeId" runat="server" style="margin-bottom: 0px" Width="200px"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtId" ErrorMessage="Enter Employee Id"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RfvEmployeeId" runat="server" ControlToValidate="txtEmployeeId" ErrorMessage="Enter Employee Id" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="REVEmployeeId" runat="server" ControlToValidate="txtEmployeeId" ErrorMessage="Invalid EmployeeId" ForeColor="Red" ValidationExpression="[0-9]{7}"></asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>
@@ -18,7 +19,7 @@
             <td>
                 <asp:TextBox ID="txtDate" runat="server" Width="200px" TextMode="Date"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtDate" ErrorMessage="Enter Date"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RfvDate" runat="server" ControlToValidate="txtDate" ErrorMessage="Enter Date" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -26,7 +27,7 @@
             <td>
                 <asp:TextBox ID="txtTime" runat="server" Width="200px" TextMode="Time"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtTime" ErrorMessage="Enter Time"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RfvTime" runat="server" ControlToValidate="txtTime" ErrorMessage="Enter Time" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -34,7 +35,7 @@
             <td>
                 <asp:TextBox ID="txtDuration" runat="server" Width="200px"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtDuration" ErrorMessage="Enter Duration"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RfvDuration" runat="server" ControlToValidate="txtDuration" ErrorMessage="Enter Duration" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -46,7 +47,7 @@
         <tr>
             <td>&nbsp;</td>
             <td>
-                <asp:Label ID="LblMsg" runat="server"></asp:Label>
+                <asp:Label ID="LblMsg" runat="server" ForeColor="Red"></asp:Label>
             </td>
         </tr>
         </table>

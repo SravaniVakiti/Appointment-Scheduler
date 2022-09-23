@@ -8,9 +8,10 @@
         <tr>
             <td><h3>Employee Id*:</h3></td>
             <td style="width: 250px">
-                <asp:TextBox ID="txtId" runat="server" style="margin-bottom: 2px" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="txtEmployeeId" runat="server" style="margin-bottom: 2px" Width="200px"></asp:TextBox>
+                <asp:RegularExpressionValidator ID="RevEmployeeId" runat="server" ControlToValidate="txtEmployeeId" ErrorMessage="invalid EmployeeId" ForeColor="Red" ValidationExpression="[0-9]{7}"></asp:RegularExpressionValidator>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtId" ErrorMessage="Enter Employee Id"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RfvEmployeeId" runat="server" ControlToValidate="txtEmployeeId" ErrorMessage="Enter Employee Id" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -18,7 +19,7 @@
             <td style="width: 250px">
                 <asp:TextBox ID="txtDesignation" runat="server" Width="200px"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtDesignation" ErrorMessage="enter Designation"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RfvDesignation" runat="server" ControlToValidate="txtDesignation" ErrorMessage="enter Designation" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -26,7 +27,7 @@
             <td style="width: 250px">
                 <asp:TextBox ID="txtDescription" runat="server" Width="200px"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtDescription" ErrorMessage="enter Description"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RfvDescription" runat="server" ControlToValidate="txtDescription" ErrorMessage="enter Description" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -34,35 +35,35 @@
             <td style="width: 250px">
                 <asp:TextBox ID="txtDate" runat="server" TextMode="Date" Width="200px"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtDate" ErrorMessage="Enter Date"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RfvDate" runat="server" ControlToValidate="txtDate" ErrorMessage="Enter Date" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
             <td><h3>Appointment Time*:</h3></td>
             <td style="width: 250px">
-                <asp:TextBox ID="txtTime" runat="server" TextMode="Time" OnTextChanged="txtTime_TextChanged" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="txtTime" runat="server" TextMode="Time" Width="200px"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtTime" ErrorMessage="Enter Time"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RfvTime" runat="server" ControlToValidate="txtTime" ErrorMessage="Enter Time" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
             <td><h3>Appointment Duration*:</h3></td>
             <td style="width: 250px">
-                <asp:TextBox ID="txtDuration" runat="server" OnTextChanged="txtDuration_TextChanged" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="txtDuration" runat="server" Width="200px"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtDuration" ErrorMessage="Enter Duration"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RfvDuration" runat="server" ControlToValidate="txtDuration" ErrorMessage="Enter Duration" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
             <td>&nbsp;</td>
             <td style="width: 250px">
-                <asp:Button ID="Button1" runat="server" Text="Add Appointment" BackColor="#000099" BorderColor="White" ForeColor="White" OnClick="btn_AddAppointment" Height="35px" Width="180px" />
+                <asp:Button ID="btnAdd" runat="server" Text="Add Appointment" BackColor="#000099" BorderColor="White" ForeColor="White" Height="35px" Width="180px" OnClick="btn_AddAppointment" />
             </td>
         </tr>
         <tr>
             <td>&nbsp;</td>
             <td style="width: 250px">
-                <asp:Label ID="LblMsg" runat="server"></asp:Label>
+                <asp:Label ID="LblMsg" runat="server" ForeColor="Red"></asp:Label>
             </td>
         </tr>
     </table>

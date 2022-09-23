@@ -24,13 +24,13 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.TextBox txtId;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// RFVEmpId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVEmpId;
 
         /// <summary>
         /// btnsearch control.
@@ -42,21 +42,21 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.Button btnsearch;
 
         /// <summary>
-        /// GridView1 control.
+        /// GVSearchAppointment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView GVSearchAppointment;
 
         /// <summary>
-        /// ObjectDataSource1 control.
+        /// ODSSearchAppointment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSource1;
+        protected global::System.Web.UI.WebControls.ObjectDataSource ODSSearchAppointment;
     }
 }

@@ -10,7 +10,7 @@
             <td style="width: 428px">
                 <asp:TextBox ID="txtId" runat="server" Width="200px"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtId" ErrorMessage="Enter Employee Id"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RFVEmpId" runat="server" ControlToValidate="txtId" ErrorMessage="Enter Employee Id" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -26,9 +26,9 @@
         </tr>
         <tr>
             <td colspan="2">
-                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ObjectDataSource1">
+                <asp:GridView ID="GVSearchAppointment" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ODSSearchAppointment">
                     <Columns>
-                        <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                        <asp:CommandField ShowEditButton="True" />
                         <asp:BoundField DataField="EmployeeId" HeaderText="EmployeeId" SortExpression="EmployeeId" />
                         <asp:BoundField DataField="Designation" HeaderText="Designation" SortExpression="Designation" />
                         <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
@@ -46,10 +46,7 @@
                     <SortedDescendingCellStyle BackColor="#D6DFDF" />
                     <SortedDescendingHeaderStyle BackColor="#002876" />
                 </asp:GridView>
-                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DataObjectTypeName="Appointment.Entities.Appointments" DeleteMethod="DeleteAppointment" SelectMethod="GetAppointmentByEmpId" TypeName="Appointment.BusinessLayer.AppointmentService" UpdateMethod="EditAppointment">
-                    <DeleteParameters>
-                        <asp:Parameter Name="EmployeeId" Type="Int32" />
-                    </DeleteParameters>
+                <asp:ObjectDataSource ID="ODSSearchAppointment" runat="server" DataObjectTypeName="Appointment.Entities.Appointments" SelectMethod="GetAppointmentByEmpId" TypeName="Appointment.BusinessLayer.AppointmentService" UpdateMethod="EditAppointment">
                     <SelectParameters>
                         <asp:ControlParameter ControlID="txtId" Name="EmployeeId" PropertyName="Text" Type="Int32" />
                     </SelectParameters>

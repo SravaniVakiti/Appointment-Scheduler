@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AppointmentDataLayer
 {
-    public class UsersRepository
+    public class UserDetailsRepository
     {
         SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ProjectConnection"].ConnectionString);
         SqlCommand command = null;

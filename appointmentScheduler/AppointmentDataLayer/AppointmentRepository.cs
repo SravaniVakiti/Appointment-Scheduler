@@ -64,6 +64,10 @@ namespace AppointmentDataLayer
             {
                 throw ex;
             }
+            finally
+            {
+                connection.Close();
+            }
         }
         public List<Appointments> GetAllAppointments()
         {
@@ -91,6 +95,10 @@ namespace AppointmentDataLayer
             catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                connection.Close();
             }
         }
         public Appointments GetAppointmentByEmpId(int employeeId)
@@ -121,6 +129,10 @@ namespace AppointmentDataLayer
 
                 throw;
             }
+            finally
+            {
+                connection.Close();
+            }
         }
         public List<Appointments> GetUpcomingAppointments()
         {
@@ -148,7 +160,10 @@ namespace AppointmentDataLayer
 
                 throw;
             }
-            finally { connection.Close(); }
+            finally
+            { 
+                connection.Close(); 
+            }
         }
         public Appointments GetAppointmentByDate(string date)
         {
@@ -175,6 +190,10 @@ namespace AppointmentDataLayer
             {
 
                 throw;
+            }
+            finally
+            {
+                connection.Close();
             }
         }
 

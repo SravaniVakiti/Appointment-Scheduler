@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Appointment.UI.MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Appointment.UI.Site2" %>
 
 <!DOCTYPE html>
 
@@ -13,26 +13,36 @@
             height:auto;
             margin:10px;
             padding:10px;
-            background-color:darkblue;
+            background-color:midnightblue;
 	    text-align:center;
         }
        header h1
         {
             color:white;
         }
+      footer h3
+      {
+          color:white;
+      }
         nav{
             border: 1px solid gray;
             width:auto;
             height:40px;
             margin:10px;
             padding:10px;
-	  
- 	 background-color:lightseagreen;
+	        background-color:lightseagreen;
+        }
+        img{
+            width:60px;
+            height:40px;
+            margin:10px;
+            padding:10px;
+	        background-color:white;
         }
     nav ul li{
         display:inline;
         margin:20px;
-	padding:0px;
+	padding:10px;
  
     }
     nav,li{
@@ -47,22 +57,20 @@
     }
     #section1
     {
-        border: 1px solid gray;
+       
             width:auto;
-            height:700px;
+            height:1000px;
             margin:10px;
             padding:10px;
   background-color:white;
     }
- #section2
-    {
-        border: 1px solid gray;
-            width:auto;
-            height:150px;
-            margin:10px;
-            padding:10px;
-  background-color:white;
-    }
+ .center{
+     display:block;
+     margin-left:auto;
+     margin-right:auto;
+     width:275px;
+     height:250px;
+ }
     footer
     {
         border: 1px solid gray;
@@ -70,12 +78,13 @@
             height:40px;
             margin:10px;
             padding:10px;
-            background-color:darkblue;
+            background-color:midnightblue;
             text-align:center;
     }
-    h4{
-        color:white;
-    }
+        .auto-style1 {
+            width: 462px;
+            height: 336px;
+        }
         </style>
 </head>
 <body>
@@ -83,28 +92,22 @@
          <header>
         <h1>Appointment Scheduler</h1>
     </header>
-    <nav>
+  <nav>
         <ul>
             <li><a href="Home.aspx">Home</a></li>
-            <li><a href="AboutPage.aspx">About</a></li>
+             <li><a href="aboutPage.aspx">About</a></li>
+             <li><a href="ContactDetails.aspx">Contact</a></li>
             <li><a href="RegisterPage.aspx">Register</a></li>
-            <li><a href="LoginPage.aspx">Login</a></li>
-            <li><a href="ContactDetails.aspx">Contact</a></li>
-            <li><a href="MenuPage.aspx">Menu</a></li>
-            <li><a href="Home.aspx">Logout</a></li>
-            
+            <li><a href="LoginPage.aspx">Login</a></li>    
         </ul>
-    </nav>
-
+    </nav>  
     <section id="section1">
-<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
-    </section>
-    <footer>
-        <h4>All Rights Reserved.&copy; 2022-23</h4>
-    </footer>
-        
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+         </section>
+        <footer>
+            <h3>All Rights Reserved.&copy; 2022-23</h3>
+         </footer>  
     </form>
 </body>
 </html>
-
-    

@@ -1,12 +1,12 @@
-﻿using Appointment.BusinessLayer;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Appointment.BusinessLayer;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace Appointment.UI
 {
@@ -23,13 +23,13 @@ namespace Appointment.UI
         {
             try
             {
-                string Email =txtEmail.Text;
+                string Email = txtEmail.Text;
                 string Pwd = txtPwd.Text;
                 string CPwd = txtCPwd.Text;
                 UserRegistrationService userService = new UserRegistrationService();
                 userService.ForgotPwd(Pwd, CPwd, Email);
                 lb1Msg.Text = "Password Updated";
-                Response.Redirect("LoginPage.aspx");
+                Response.Redirect("Login.aspx");
 
             }
             catch (Exception)

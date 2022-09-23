@@ -1,13 +1,12 @@
-﻿using Appointment.BusinessLayer;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using Appointment.BusinessLayer;
+using System.Configuration;
+using System.Data.SqlClient;
 namespace Appointment.UI
 {
     public partial class LoginPage : System.Web.UI.Page
@@ -20,38 +19,38 @@ namespace Appointment.UI
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-                try
-                {
-                    string Email = txtEmail.Text;
-                    UserRegistrationService userService = new UserRegistrationService();
-                    int res = userService.Login(Email);
+            try
+            {
+                string Email = txtEmailid.Text;
+                UserRegistrationService userService = new UserRegistrationService();
+                int res = userService.Login(Email);
 
-                    if (res == 1)
+                if (res == 1)
+                {
+                    connection.Open();
+                    string checkPwd = "select Pwd from RegisterDetails where Email='" + txtEmailid.Text + "'";
+                    SqlCommand PwdCmd = new SqlCommand(checkPwd, connection);
+                    string Pwd = PwdCmd.ExecuteScalar().ToString().Replace(" ", "");
+                    if (Pwd == txtPwd.Text)
                     {
-                        connection.Open();
-                        string checkPwd = "select Pwd from RegisterDetails where Email='" + txtEmail.Text + "'";
-                        SqlCommand PwdCmd = new SqlCommand(checkPwd, connection);
-                        string Pwd = PwdCmd.ExecuteScalar().ToString().Replace(" ", "");
-                        if (Pwd == txtPwd.Text)
-                        {
-                            Session["UserName"] = txtEmail.Text;
-                            lb1Msg.Text = "Password is correct";
-                            Response.Redirect("MenuPage.aspx");
-                        }
-                        else
-                        {
-                            lb1Msg.Text = "Password is  not correct";
-                        }
+                        Session["UserName"] = txtEmailid.Text;
+                        LblMsg.Text = "Password is correct";
+                        Response.Redirect("MenuPage.aspx");
                     }
                     else
                     {
-                        lb1Msg.Text = "Invalid Employee Id or password";
+                        LblMsg.Text = "Password is  not correct";
                     }
                 }
-                catch (Exception)
+                else
                 {
-                    lb1Msg.Text = "Invalid Employee Id or Password";
+                    LblMsg.Text = "Invalid Employee Id or password";
                 }
+            }
+            catch (Exception)
+            {
+                LblMsg.Text = "Invalid Employee Id or Password";
+            }
         }
     }
 }

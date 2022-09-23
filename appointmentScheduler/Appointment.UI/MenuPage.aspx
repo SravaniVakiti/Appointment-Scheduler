@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MenuPage.aspx.cs" Inherits="Appointment.UI.MenuPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Label ID="LblMsg" runat="server" ForeColor="#FF3300"></asp:Label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<asp:Label ID="LblUser" runat="server" ForeColor="#FF0066"></asp:Label>
 <br />
 <asp:TreeView ID="TreeView1" runat="server" ImageSet="BulletedList4" ShowExpandCollapse="False">
         <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
@@ -12,6 +13,7 @@
                 <asp:TreeNode NavigateUrl="~/AllAppointments.aspx" Text="Get All Appointment" Value="Get Appointment by Date"></asp:TreeNode>
                 <asp:TreeNode Text="Upcoming Appointments" Value="Upcoming Appointments" NavigateUrl="~/UpcomingAppointments.aspx"></asp:TreeNode>
                 <asp:TreeNode NavigateUrl="~/GetAppointmentByDate.aspx" Text="Get Appointment By Date" Value="New Node"></asp:TreeNode>
+                <asp:TreeNode NavigateUrl="~/CancelAppointment.aspx" Text="Cancel Appointment" Value="Cancel Appointment"></asp:TreeNode>
             </asp:TreeNode>
             <asp:TreeNode Text="Users" Value="Users">
                 <asp:TreeNode NavigateUrl="~/AllUsers.aspx" Text="All Users" Value="All Users"></asp:TreeNode>

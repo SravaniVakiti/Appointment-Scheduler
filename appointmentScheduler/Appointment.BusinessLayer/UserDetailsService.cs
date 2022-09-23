@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace Appointment.BusinessLayer
 {
-    public class UsersService
+    public class UserDetailsService
     {
-        UsersRepository repository;
-        public UsersService()
+        UserDetailsRepository repository;
+        public UserDetailsService()
         {
-            repository = new UsersRepository();
+            repository = new UserDetailsRepository();
         }
         public List<RegisterDetails> GetAllUsers()
         {

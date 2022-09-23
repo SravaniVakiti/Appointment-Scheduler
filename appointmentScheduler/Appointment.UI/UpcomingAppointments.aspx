@@ -6,12 +6,12 @@
             <td colspan="2" style="color:darkblue;font-size:40px;font-family:'Times New Roman'">&nbsp;Upcoming Appointments:</td>
         </tr>
         <tr>
-            <td colspan="2"><asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetUpcomingAppointments" TypeName="Appointment.BusinessLayer.AppointmentService"></asp:ObjectDataSource>
+            <td colspan="2"><asp:ObjectDataSource ID="ODSUpcomingAppointments" runat="server" SelectMethod="GetUpcomingAppointments" TypeName="Appointment.BusinessLayer.AppointmentService"></asp:ObjectDataSource>
             </td>
            
         </tr>
         <tr>
-            <td colspan="2">&nbsp;<asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ObjectDataSource1">
+            <td colspan="2"><asp:GridView ID="GVUpcomingAppointments" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ODSUpcomingAppointments">
                 <Columns>
                     <asp:BoundField DataField="EmployeeId" HeaderText="EmployeeId" SortExpression="EmployeeId" />
                     <asp:BoundField DataField="Designation" HeaderText="Designation" SortExpression="Designation" />

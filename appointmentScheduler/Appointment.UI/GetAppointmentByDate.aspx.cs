@@ -24,6 +24,7 @@ namespace Appointment.UI
                 string date = txtDate.Text;
                 AppointmentService appointmentService = new AppointmentService();
                 appointmentService.GetAppointmentByDate(date);
+
             }
             catch (Exception ex)
             {

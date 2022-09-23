@@ -58,10 +58,9 @@ namespace AppointmentDataLayer
                 connection.Open();
                 cmd.ExecuteNonQuery();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                throw ex;
             }
             finally
             {

@@ -15,31 +15,31 @@ namespace Appointment.UI
     {
 
         /// <summary>
-        /// txtEmail control.
+        /// txtEmailid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtEmailid;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// RFVEmailid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVEmailid;
 
         /// <summary>
-        /// RegularExpressionValidator1 control.
+        /// REVEmailid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVEmailid;
 
         /// <summary>
         /// txtPwd control.
@@ -51,40 +51,40 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.TextBox txtPwd;
 
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// RFVPwd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVPwd;
 
         /// <summary>
-        /// RegularExpressionValidator2 control.
+        /// REVPwd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVPwd;
 
         /// <summary>
-        /// HyperLink3 control.
+        /// HLForgotPwd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
+        protected global::System.Web.UI.WebControls.HyperLink HLForgotPwd;
 
         /// <summary>
-        /// HyperLink4 control.
+        /// HLRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
+        protected global::System.Web.UI.WebControls.HyperLink HLRegister;
 
         /// <summary>
         /// btnLogin control.
@@ -96,12 +96,12 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.Button btnLogin;
 
         /// <summary>
-        /// lb1Msg control.
+        /// LblMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb1Msg;
+        protected global::System.Web.UI.WebControls.Label LblMsg;
     }
 }

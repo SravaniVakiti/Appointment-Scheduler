@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Appointment.UI
 {
-    public partial class MenuPage : System.Web.UI.Page
+    public partial class CancelAppointment : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           LblUser.Text ="Welcome: "+Session["UserName"].ToString();
+
         }
     }
 }

@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace Appointment.UI
 {
-    public partial class Register : System.Web.UI.Page
+    public partial class registerPage : System.Web.UI.Page
     {
         SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ProjectConnection"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
@@ -22,7 +22,7 @@ namespace Appointment.UI
         {
             try
             {
-                int EmpId = int.Parse(txtId.Text);
+                int EmpId = int.Parse(txtEmployeeId.Text);
                 string Fname = txtFname.Text;
                 string Lname = txtLname.Text;
                 string Email = txtEmail.Text;
@@ -32,14 +32,14 @@ namespace Appointment.UI
                 string CPwd = txtCPwd.Text;
                 UserRegistrationService userService = new UserRegistrationService();
                 userService.Registration(EmpId, Fname, Lname, Designation, Email, Phone, Pwd, CPwd);
-
                 LblMsg.Text = "Registered Successful";
-                Response.Redirect("MenuPage.aspx");
+                Response.Redirect("LoginPage.aspx");
                 connection.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                LblMsg.Text = "Error: " + " Username already exists";
+                LblMsg.Text = "error: " + ex;
+                // LblMsg.Text = "Error: " + " Username already exists";
             }
         }
     }

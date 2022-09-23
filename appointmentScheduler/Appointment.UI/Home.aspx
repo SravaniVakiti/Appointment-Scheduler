@@ -6,7 +6,7 @@
             <asp:Button ID="btnLogin" runat="server" BackColor="#009999" Text="Login" Width="180px" ForeColor="White" Height="38px" BorderColor="White" PostBackUrl="~/LoginPage.aspx" />
         </td>
         <td>
-            <asp:Button ID="btnRegister" runat="server" BackColor="#009999" style="margin-left: 0px" Text="Register" Width="180px" BorderStyle="Groove" ForeColor="White" Height="38px" BorderColor="White" PostBackUrl="~/Register.aspx" />
+            <asp:Button ID="btnRegister" runat="server" BackColor="#009999" style="margin-left: 0px" Text="Register" Width="180px" BorderStyle="Groove" ForeColor="White" Height="38px" BorderColor="White" PostBackUrl="~/RegisterPage.aspx" />
         </td>
     </tr>
 </table>

@@ -15,13 +15,13 @@ namespace Appointment.UI
     {
 
         /// <summary>
-        /// LblMsg control.
+        /// LblUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblMsg;
+        protected global::System.Web.UI.WebControls.Label LblUser;
 
         /// <summary>
         /// TreeView1 control.

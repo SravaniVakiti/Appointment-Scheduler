@@ -9,7 +9,7 @@
             <td style="height: 32px; width: 262px;">
                 <asp:TextBox ID="txtDate" runat="server" TextMode="Date" Width="200px" Height="32px"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtDate" ErrorMessage="Mandatory To Enter Date "></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RFVDate" runat="server" ControlToValidate="txtDate" ErrorMessage="Mandatory To Enter Date " ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
             </td>
         </tr>
@@ -22,14 +22,14 @@
         <tr>
             <td>&nbsp;</td>
             <td style="width: 262px">
-                <asp:Label ID="LblMsg" runat="server"></asp:Label>
+                <asp:Label ID="LblMsg" runat="server" ForeColor="Red"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td colspan="2">
-                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ObjectDataSource1">
+            <td colspan="2" id="ODSGetAppointmentByDate">
+                <asp:GridView ID="GVGetAppointmentByDate" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ODSGetAppointmentByDate">
                     <Columns>
-                        <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                        <asp:CommandField ShowEditButton="True" />
                         <asp:BoundField DataField="EmployeeId" HeaderText="EmployeeId" SortExpression="EmployeeId" />
                         <asp:BoundField DataField="Designation" HeaderText="Designation" SortExpression="Designation" />
                         <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
@@ -47,10 +47,7 @@
                     <SortedDescendingCellStyle BackColor="#D6DFDF" />
                     <SortedDescendingHeaderStyle BackColor="#002876" />
                 </asp:GridView>
-                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DataObjectTypeName="Appointment.Entities.Appointments" DeleteMethod="DeleteAppointment" SelectMethod="GetAppointmentByDate" TypeName="Appointment.BusinessLayer.AppointmentService" UpdateMethod="EditAppointment">
-                    <DeleteParameters>
-                        <asp:Parameter Name="EmployeeId" Type="Int32" />
-                    </DeleteParameters>
+                <asp:ObjectDataSource ID="ODSGetAppointmentByDate" runat="server" DataObjectTypeName="Appointment.Entities.Appointments" SelectMethod="GetAppointmentByDate" TypeName="Appointment.BusinessLayer.AppointmentService" UpdateMethod="EditAppointment">
                     <SelectParameters>
                         <asp:ControlParameter ControlID="txtDate" Name="Date" PropertyName="Text" Type="String" />
                     </SelectParameters>

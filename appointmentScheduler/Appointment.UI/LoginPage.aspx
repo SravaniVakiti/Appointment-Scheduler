@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="Appointment.UI.LoginPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="Appointment.UI.LoginPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table align="center" style="width: 50%;background-color:lightgray;">
     <tr>
@@ -7,30 +7,30 @@
     <tr>
         <td><h3>Employee Email*:</h3></td>
         <td style="width: 421px">
-            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtEmailid" runat="server"></asp:TextBox>
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Enter Email"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="RegularExpressionValidator" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RFVEmailid" runat="server" ControlToValidate="txtEmailid" ErrorMessage="Enter Email" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="REVEmailid" runat="server" ErrorMessage="RegularExpressionValidator" ControlToValidate="txtEmailid" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red"></asp:RegularExpressionValidator>
         </td>
     </tr>
     <tr>
         <td><h3>Password*:</h3></td>
         <td style="width: 421px">
             <asp:TextBox ID="txtPwd" runat="server" TextMode="Password"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPwd" ErrorMessage="Enter Password"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtPwd" ErrorMessage="Incorrect password" ValidationExpression="[a-zA-Z0-9$@#!%*?&amp;]{8,}"></asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RFVPwd" runat="server" ControlToValidate="txtPwd" ErrorMessage="Enter Password" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="REVPwd" runat="server" ControlToValidate="txtPwd" ErrorMessage="Incorrect password" ValidationExpression="[a-zA-Z0-9$@#!%*?&amp;]{8,}" ForeColor="Red"></asp:RegularExpressionValidator>
         </td>
     </tr>
     <tr>
         <td>&nbsp;</td>
         <td style="width: 421px">
-            <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="#000099" NavigateUrl="~/ForgotPassword.aspx">Forgot Password??</asp:HyperLink>
+            <asp:HyperLink ID="HLForgotPwd" runat="server" ForeColor="#000099" NavigateUrl="~/ForgotPassword.aspx">Forgot Password??</asp:HyperLink>
         </td>
     </tr>
     <tr>
         <td>&nbsp;</td>
         <td style="width: 421px">
-            <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="#FF3300" NavigateUrl="~/Register.aspx">Register as a new user?</asp:HyperLink>
+            <asp:HyperLink ID="HLRegister" runat="server" ForeColor="#FF3300" NavigateUrl="~/RegisterPage.aspx">Register as a new user?</asp:HyperLink>
         </td>
     </tr>
     <tr>
@@ -43,7 +43,7 @@
     <tr>
         <td>&nbsp;</td>
         <td style="width: 421px">
-            <asp:Label ID="lb1Msg" runat="server"></asp:Label>
+            <asp:Label ID="LblMsg" runat="server" ForeColor="Red"></asp:Label>
         </td>
     </tr>
 </table>

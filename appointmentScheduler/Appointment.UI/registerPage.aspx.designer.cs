@@ -11,35 +11,35 @@ namespace Appointment.UI
 {
 
 
-    public partial class Register
+    public partial class registerPage
     {
 
         /// <summary>
-        /// txtId control.
+        /// txtEmployeeId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtId;
+        protected global::System.Web.UI.WebControls.TextBox txtEmployeeId;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// RFVEmployeeId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVEmployeeId;
 
         /// <summary>
-        /// RegularExpressionValidator5 control.
+        /// REVEmployeeId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator5;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVEmployeeId;
 
         /// <summary>
         /// txtFname control.
@@ -51,13 +51,13 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.TextBox txtFname;
 
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// RFVFname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVFname;
 
         /// <summary>
         /// txtLname control.
@@ -69,13 +69,13 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.TextBox txtLname;
 
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// RFVLname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVLname;
 
         /// <summary>
         /// txtDesignation control.
@@ -87,13 +87,13 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.TextBox txtDesignation;
 
         /// <summary>
-        /// RequiredFieldValidator8 control.
+        /// RFVDesignation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVDesignation;
 
         /// <summary>
         /// txtEmail control.
@@ -105,22 +105,22 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// RequiredFieldValidator4 control.
+        /// RFVEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVEmail;
 
         /// <summary>
-        /// RegularExpressionValidator1 control.
+        /// REVEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVEmail;
 
         /// <summary>
         /// txtPhone control.
@@ -132,22 +132,22 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.TextBox txtPhone;
 
         /// <summary>
-        /// RequiredFieldValidator5 control.
+        /// RFVPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVPhone;
 
         /// <summary>
-        /// RegularExpressionValidator3 control.
+        /// REVPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVPhone;
 
         /// <summary>
         /// txtPwd control.
@@ -159,22 +159,22 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.TextBox txtPwd;
 
         /// <summary>
-        /// RequiredFieldValidator6 control.
+        /// RFVPwd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVPwd;
 
         /// <summary>
-        /// RegularExpressionValidator4 control.
+        /// REVPwd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator4;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVPwd;
 
         /// <summary>
         /// txtCPwd control.
@@ -186,22 +186,22 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.TextBox txtCPwd;
 
         /// <summary>
-        /// RequiredFieldValidator7 control.
+        /// RFVCPwd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVCPwd;
 
         /// <summary>
-        /// CompareValidator1 control.
+        /// CVCPwd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
+        protected global::System.Web.UI.WebControls.CompareValidator CVCPwd;
 
         /// <summary>
         /// btnRegister control.
