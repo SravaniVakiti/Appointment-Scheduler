@@ -22,6 +22,6 @@
     </ul>
     <p>In order to use this application, you must register as a user.</p>
     <p>Click 
-    <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="#FF3300" NavigateUrl="~/Register.aspx">here to register.</asp:HyperLink></p>
+    <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="#FF3300" NavigateUrl="~/registerPage.aspx">here to register.</asp:HyperLink></p>
 <p>&nbsp;</p>
 </asp:Content>

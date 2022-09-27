@@ -29,7 +29,7 @@ namespace Appointment.UI
                 UserRegistrationService userService = new UserRegistrationService();
                 userService.ForgotPwd(Pwd, CPwd, Email);
                 lb1Msg.Text = "Password Updated";
-                Response.Redirect("Login.aspx");
+                Response.Redirect("LoginPage.aspx");
 
             }
             catch (Exception)

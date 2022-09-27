@@ -19,8 +19,6 @@ namespace Appointment.UI
         {
             try
             {
-
-
                 string date = txtDate.Text;
                 AppointmentService appointmentService = new AppointmentService();
                 appointmentService.GetAppointmentByDate(date);

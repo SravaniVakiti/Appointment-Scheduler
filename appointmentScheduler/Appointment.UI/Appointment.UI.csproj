@@ -133,7 +133,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Home.aspx" />
     <Content Include="images\appointmentScheduler.jpg" />
-    <Content Include="images\Log.jpg" />
+    <Content Include="images\Logo.jpg" />
     <Content Include="LoginPage.aspx" />
     <Content Include="MasterPage.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />

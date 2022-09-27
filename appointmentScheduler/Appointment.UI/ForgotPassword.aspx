@@ -9,6 +9,7 @@
             <td><h3>Employee Email</h3></td>
             <td style="width: 382px">
                 <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                <br />
                 <asp:RequiredFieldValidator ID="RFVEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Enter Email" ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <asp:RegularExpressionValidator ID="REVEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Invalid Email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red"></asp:RegularExpressionValidator>
@@ -18,18 +19,22 @@
             <td><h3>New Password</h3></td>
             <td style="width: 382px">
                 <asp:TextBox ID="txtPwd" runat="server" TextMode="Password"></asp:TextBox>
-                <asp:RegularExpressionValidator ID="REVPwd" runat="server" ControlToValidate="txtPwd" ErrorMessage="Password should contain minimum 8 characters atleast one Uppercase Alphabet,1 Lowercase Alphabet ,1 Number and 1 special character" ValidationExpression="[a-zA-Z0-9$@#!%*?&amp;]{8,}" ForeColor="Red"></asp:RegularExpressionValidator>
                 <br />
                 <asp:RequiredFieldValidator ID="RFVPwd" runat="server" ControlToValidate="txtPwd" ErrorMessage="Enter Password" ForeColor="Red"></asp:RequiredFieldValidator>
+                <br />
+                <asp:RegularExpressionValidator ID="REVPwd" runat="server" ControlToValidate="txtPwd" ErrorMessage="Password should contain minimum 8 characters atleast one Uppercase Alphabet,1 Lowercase Alphabet ,1 Number and 1 special character" ValidationExpression="[a-zA-Z0-9$@#!%*?&amp;]{8,}" ForeColor="Red"></asp:RegularExpressionValidator>
+                <br />
             </td>
         </tr>
         <tr>
             <td><h3>Confirm Password</h3></td>
             <td style="width: 382px">
                 <asp:TextBox ID="txtCPwd" runat="server" TextMode="Password"></asp:TextBox>
-                <asp:CompareValidator ID="CVCPwd" runat="server" ControlToCompare="txtPwd" ControlToValidate="txtCPwd" ErrorMessage="Password Mismatch" ForeColor="Red"></asp:CompareValidator>
                 <br />
                 <asp:RequiredFieldValidator ID="RFVCPwd" runat="server" ControlToValidate="txtCPwd" ErrorMessage="Enter Confirm Pwd" ForeColor="Red"></asp:RequiredFieldValidator>
+                <br />
+                <asp:CompareValidator ID="CVCPwd" runat="server" ControlToCompare="txtPwd" ControlToValidate="txtCPwd" ErrorMessage="Password Mismatch" ForeColor="Red"></asp:CompareValidator>
+                <br />
             </td>
         </tr>
         <tr>

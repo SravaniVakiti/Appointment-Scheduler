@@ -11,6 +11,8 @@
                 <asp:TextBox ID="txtId" runat="server" Width="200px"></asp:TextBox>
                 <br />
                 <asp:RequiredFieldValidator ID="RFVEmpId" runat="server" ControlToValidate="txtId" ErrorMessage="Enter Employee Id" ForeColor="Red"></asp:RequiredFieldValidator>
+                <br />
+                <asp:RegularExpressionValidator ID="REVEmpId" runat="server" ControlToValidate="txtId" ErrorMessage="Invalid EmployeeId" ForeColor="Red" ValidationExpression="[0-9]{7}"></asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>

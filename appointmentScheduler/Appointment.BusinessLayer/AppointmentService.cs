@@ -26,6 +26,7 @@ namespace Appointment.BusinessLayer
 
                 throw;
             }
+
         }
         public void DeleteAppointment(int EmployeeId)
         {

@@ -51,15 +51,6 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.TextBox txtPwd;
 
         /// <summary>
-        /// REVPwd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVPwd;
-
-        /// <summary>
         /// RFVPwd control.
         /// </summary>
         /// <remarks>
@@ -67,6 +58,15 @@ namespace Appointment.UI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVPwd;
+
+        /// <summary>
+        /// REVPwd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVPwd;
 
         /// <summary>
         /// txtCPwd control.
@@ -78,15 +78,6 @@ namespace Appointment.UI
         protected global::System.Web.UI.WebControls.TextBox txtCPwd;
 
         /// <summary>
-        /// CVCPwd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CVCPwd;
-
-        /// <summary>
         /// RFVCPwd control.
         /// </summary>
         /// <remarks>
@@ -94,6 +85,15 @@ namespace Appointment.UI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVCPwd;
+
+        /// <summary>
+        /// CVCPwd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CVCPwd;
 
         /// <summary>
         /// btnReset control.

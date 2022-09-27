@@ -10,6 +10,7 @@
             <asp:TextBox ID="txtEmailid" runat="server"></asp:TextBox>
             <br />
             <asp:RequiredFieldValidator ID="RFVEmailid" runat="server" ControlToValidate="txtEmailid" ErrorMessage="Enter Email" ForeColor="Red"></asp:RequiredFieldValidator>
+            <br />
             <asp:RegularExpressionValidator ID="REVEmailid" runat="server" ErrorMessage="RegularExpressionValidator" ControlToValidate="txtEmailid" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red"></asp:RegularExpressionValidator>
         </td>
     </tr>
@@ -17,7 +18,9 @@
         <td><h3>Password*:</h3></td>
         <td style="width: 421px">
             <asp:TextBox ID="txtPwd" runat="server" TextMode="Password"></asp:TextBox>
+            <br />
             <asp:RequiredFieldValidator ID="RFVPwd" runat="server" ControlToValidate="txtPwd" ErrorMessage="Enter Password" ForeColor="Red"></asp:RequiredFieldValidator>
+            <br />
             <asp:RegularExpressionValidator ID="REVPwd" runat="server" ControlToValidate="txtPwd" ErrorMessage="Incorrect password" ValidationExpression="[a-zA-Z0-9$@#!%*?&amp;]{8,}" ForeColor="Red"></asp:RegularExpressionValidator>
         </td>
     </tr>

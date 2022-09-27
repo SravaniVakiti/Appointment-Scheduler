@@ -32,9 +32,9 @@ namespace Appointment.UI
                 LblMsg.Text = "Record Added successfully";
                 Response.Redirect("MenuPage.aspx");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                LblMsg.Text = "Error: " + ex.Message;
+                LblMsg.Text = "Error occured while Adding Appointment";
             }
         }
     }

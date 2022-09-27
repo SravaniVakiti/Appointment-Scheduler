@@ -37,6 +37,10 @@ namespace AppointmentDataLayer
             {
                 throw ex;
             }
+            finally
+            {
+                connection.Close();
+            }
         }
     }
 }

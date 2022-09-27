@@ -24,17 +24,15 @@ namespace Appointment.UI
                 Appointment.EmployeeId = int.Parse(txtEmployeeId.Text);
                 Appointment.Date = txtDate.Text;
                 Appointment.Time = txtTime.Text;
-                //Appointment.Date = DateTime.Parse(txtDate.Text);
-                //Appointment.Time = DateTime.Parse(txtTime.Text);
                 Appointment.Duration = txtDuration.Text;
                 AppointmentService appointmentService = new AppointmentService();
                 appointmentService.EditAppointment(Appointment);
                 LblMsg.Text = "Record Added successfully";
                 Response.Redirect("MenuPage.aspx");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                LblMsg.Text="error: "+ex;
+                LblMsg.Text= "Error occured while Editing Appointment";
             }
         }
     }

@@ -36,10 +36,10 @@ namespace Appointment.UI
                 Response.Redirect("LoginPage.aspx");
                 connection.Close();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                LblMsg.Text = "error: " + ex;
-                // LblMsg.Text = "Error: " + " Username already exists";
+              
+                 LblMsg.Text = "Error: " + " Username already exists";
             }
         }
     }
